@@ -6,7 +6,7 @@ import org.junit.runner.notification.Failure;
 import pl.hfdp.strategy.stage1.DuckSuite;
 
 /**
- * Unit test for simple App.
+ * Unit test for Design Patterns App.
  */
 public class AppTest {
     public static void main(String[] args) {

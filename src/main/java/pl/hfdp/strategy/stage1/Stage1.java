@@ -1,6 +1,7 @@
 package pl.hfdp.strategy.stage1;
 
 /**
+ * 🦆
  * In real world there aren't any simple ducks.
  * That's why it is an abstract duck.
  */
@@ -65,20 +66,11 @@ class RedHeadDuck extends Duck {
     /**
      * This method defines the display properties of a Red Head Duck.
      * Like any other Duck it swims but it has a red head.
-     * <p>
-     * 🦆
      *
      * @return the way the red head looks
      */
     @Override
     public String display() {
         return "Red head Duck has a red head!";
-    }
-}
-
-
-public class Stage1 {
-    public static void main(String[] args) {
-
     }
 }
