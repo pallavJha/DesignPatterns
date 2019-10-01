@@ -2,6 +2,7 @@ package pl.hfdp.strategy.stage1;
 
 /**
  * 🦆
+ *
  * In real world there aren't any simple ducks.
  * That's why it is an abstract duck.
  */
