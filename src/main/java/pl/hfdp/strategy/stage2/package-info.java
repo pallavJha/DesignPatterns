@@ -1,5 +1,5 @@
 /**
- * This is the stage 2 in the Strategy design pattern series.
+ * This is the 2nd Stage in the Strategy design pattern series.
  * <br>
  * Once our base(or the ducks) is set we can proceed forward to solve problems.
  * <br>
