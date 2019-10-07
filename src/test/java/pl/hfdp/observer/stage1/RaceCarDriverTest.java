@@ -31,7 +31,7 @@ public class RaceCarDriverTest {
     @Test
     public void receiveNewContent() {
         raceCarDriver.receiveNewContent("title", "content");
-        TestCase.assertEquals(1, stream.toString().split("title").length);
+        TestCase.assertEquals(2, stream.toString().split("title").length);
         TestCase.assertEquals(2, stream.toString().split("content").length);
     }
 }
