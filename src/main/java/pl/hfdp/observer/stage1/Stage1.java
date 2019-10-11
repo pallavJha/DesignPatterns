@@ -71,7 +71,7 @@ class ReadDigestWithSubscription extends ReadDigest {
 
     /**
      * Constructor with all the customers.
-     * <br/>
+     * <br>
      * This constructor is not implemented correctly because it is accepting all of the customers
      * one by one through the arguments. This might seem viable for 2-3 customers but there's no
      * way it can support thousands of them.

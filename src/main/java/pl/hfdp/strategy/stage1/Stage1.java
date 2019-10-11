@@ -30,6 +30,8 @@ abstract class Duck {
     /**
      * As different ducks look different, this method will be overridden by the concrete
      * implementations
+     *
+     * @return how the duck looks like
      */
     abstract public String display();
 

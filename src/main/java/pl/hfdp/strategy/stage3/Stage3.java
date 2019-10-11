@@ -4,7 +4,7 @@ package pl.hfdp.strategy.stage3;
  * This is the extracted out behaviour.
  * Multiple concrete behaviours will be used by the {@link Duck} class to
  * execute it's performFly method.
- * <br/>
+ * <br>
  * This behaviour is a must have for a duck.
  */
 interface FlyBehaviour {
@@ -62,7 +62,7 @@ abstract class Duck {
      * Here the {@link #flyBehaviour} would be used. This method calls
      * the {@link FlyBehaviour#fly()} of the passed behaviour.
      * <p>
-     * <br/>
+     * <br>
      * This method will be inherited by all the concrete ducks
      * and it will enable each of their objects to fly.
      *

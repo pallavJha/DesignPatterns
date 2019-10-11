@@ -56,7 +56,7 @@ class RubberDuck extends Duck {
     /**
      * This is a Rubber Duck and it cannot fly(naturally). As the {@link pl.hfdp.strategy.stage2.Duck}
      * already has the method fly, that behaviour was inherited by the Rubber Duck.
-     * <br/>
+     * <br>
      * To stop that we have to override the {@link pl.hfdp.strategy.stage2.Duck#fly()} method of the Rubber Duck.
      *
      * @return actually, nothing
