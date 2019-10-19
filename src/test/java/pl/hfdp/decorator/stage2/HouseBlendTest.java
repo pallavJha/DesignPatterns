@@ -16,16 +16,16 @@ public class HouseBlendTest {
 
     @Test
     public void cost() {
-        houseBlend.setMilk(true);
-        houseBlend.setMocha(true);
-        houseBlend.setSoy(true);
-        houseBlend.setWhip(true);
+        houseBlend.setMilk();
+        houseBlend.setMocha();
+        houseBlend.setSoy();
+        houseBlend.setWhip();
 
         Beverage beverage = new Beverage();
-        beverage.setMilk(true);
-        beverage.setMocha(true);
-        beverage.setSoy(true);
-        beverage.setWhip(true);
+        beverage.setMilk();
+        beverage.setMocha();
+        beverage.setSoy();
+        beverage.setWhip();
         assertEquals(houseBlend.cost(), "House Blend".hashCode() + beverage.cost());
     }
 }

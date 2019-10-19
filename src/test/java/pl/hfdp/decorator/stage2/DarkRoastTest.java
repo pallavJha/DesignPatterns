@@ -16,16 +16,16 @@ public class DarkRoastTest {
 
     @Test
     public void cost() {
-        darkRoast.setMilk(true);
-        darkRoast.setMocha(true);
-        darkRoast.setSoy(true);
-        darkRoast.setWhip(true);
+        darkRoast.setMilk();
+        darkRoast.setMocha();
+        darkRoast.setSoy();
+        darkRoast.setWhip();
 
         Beverage beverage = new Beverage();
-        beverage.setMilk(true);
-        beverage.setMocha(true);
-        beverage.setSoy(true);
-        beverage.setWhip(true);
+        beverage.setMilk();
+        beverage.setMocha();
+        beverage.setSoy();
+        beverage.setWhip();
         assertEquals(darkRoast.cost(), "Dark Roast".hashCode() + beverage.cost());
     }
 }

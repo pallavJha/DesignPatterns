@@ -16,16 +16,16 @@ public class DecafTest {
 
     @Test
     public void cost() {
-        decaf.setMilk(true);
-        decaf.setMocha(true);
-        decaf.setSoy(true);
-        decaf.setWhip(true);
+        decaf.setMilk();
+        decaf.setMocha();
+        decaf.setSoy();
+        decaf.setWhip();
 
         Beverage beverage = new Beverage();
-        beverage.setMilk(true);
-        beverage.setMocha(true);
-        beverage.setSoy(true);
-        beverage.setWhip(true);
+        beverage.setMilk();
+        beverage.setMocha();
+        beverage.setSoy();
+        beverage.setWhip();
         assertEquals(decaf.cost(), "Decaf".hashCode() + beverage.cost());
     }
 }

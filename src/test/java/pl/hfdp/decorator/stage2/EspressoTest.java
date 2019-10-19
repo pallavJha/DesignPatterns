@@ -16,16 +16,16 @@ public class EspressoTest {
 
     @Test
     public void cost() {
-        espresso.setMilk(true);
-        espresso.setMocha(true);
-        espresso.setSoy(true);
-        espresso.setWhip(true);
+        espresso.setMilk();
+        espresso.setMocha();
+        espresso.setSoy();
+        espresso.setWhip();
 
         Beverage beverage = new Beverage();
-        beverage.setMilk(true);
-        beverage.setMocha(true);
-        beverage.setSoy(true);
-        beverage.setWhip(true);
+        beverage.setMilk();
+        beverage.setMocha();
+        beverage.setSoy();
+        beverage.setWhip();
         assertEquals(espresso.cost(), "Espresso".hashCode() + beverage.cost());
     }
 

@@ -16,24 +16,20 @@ class Beverage {
         this.description = "Default Beverage";
     }
 
-    String getDescription() {
-        return description;
+    void setMilk() {
+        this.milk = true;
     }
 
-    void setMilk(boolean milk) {
-        this.milk = milk;
+    void setSoy() {
+        this.soy = true;
     }
 
-    void setSoy(boolean soy) {
-        this.soy = soy;
+    void setMocha() {
+        this.mocha = true;
     }
 
-    void setMocha(boolean mocha) {
-        this.mocha = mocha;
-    }
-
-    void setWhip(boolean whip) {
-        this.whip = whip;
+    void setWhip() {
+        this.whip = true;
     }
 
     long cost() {
