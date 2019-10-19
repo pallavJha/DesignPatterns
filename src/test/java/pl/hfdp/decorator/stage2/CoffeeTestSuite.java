@@ -8,7 +8,7 @@ import org.junit.runners.Suite;
         DarkRoastTest.class,
         HouseBlendTest.class,
         DecafTest.class,
-        Espresso.class
+        EspressoTest.class
 })
 public class CoffeeTestSuite {
 }

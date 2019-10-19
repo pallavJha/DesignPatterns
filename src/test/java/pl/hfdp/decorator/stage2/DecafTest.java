@@ -20,12 +20,6 @@ public class DecafTest {
         decaf.setMocha();
         decaf.setSoy();
         decaf.setWhip();
-
-        Beverage beverage = new Beverage();
-        beverage.setMilk();
-        beverage.setMocha();
-        beverage.setSoy();
-        beverage.setWhip();
-        assertEquals(decaf.cost(), "Decaf".hashCode() + beverage.cost());
+        assertEquals(15.23, decaf.cost() ,0);
     }
 }

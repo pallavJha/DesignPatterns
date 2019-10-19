@@ -11,7 +11,7 @@ abstract class Beverage {
         return this.description;
     }
 
-    public abstract int getCost();
+    public abstract double getCost();
 }
 
 class HouseBlend extends Beverage {
@@ -28,8 +28,8 @@ class HouseBlend extends Beverage {
     }
 
     @Override
-    public int getCost() {
-        return this.getDescription().hashCode();
+    public double getCost() {
+        return 10.5;
     }
 }
 
@@ -47,8 +47,8 @@ class DarkRoast extends Beverage {
     }
 
     @Override
-    public int getCost() {
-        return this.getDescription().hashCode();
+    public double getCost() {
+        return 5.6;
     }
 }
 
@@ -66,8 +66,8 @@ class HouseBlendWithMochaAndStreamedMilk extends Beverage {
     }
 
     @Override
-    public int getCost() {
-        return this.description.hashCode();
+    public double getCost() {
+        return 11.45;
     }
 }
 
@@ -85,8 +85,8 @@ class DecalWithSoyAndMocha extends Beverage {
     }
 
     @Override
-    public int getCost() {
-        return this.description.hashCode();
+    public double getCost() {
+        return 9.44;
     }
 }
 

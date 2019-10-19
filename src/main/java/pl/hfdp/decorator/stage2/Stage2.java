@@ -32,8 +32,8 @@ class Beverage {
         this.whip = true;
     }
 
-    long cost() {
-        return this.description.hashCode() + (this.milk ? 1 : 0) +
+    double cost() {
+        return 0D + (this.milk ? 1 : 0) +
                 (this.soy ? 1 : 0) + (this.mocha ? 1 : 0) +
                 (this.whip ? 1 : 0);
     }
@@ -42,32 +42,32 @@ class Beverage {
 class HouseBlend extends Beverage {
 
     @Override
-    long cost() {
-        return "House Blend".hashCode() + super.cost();
+    double cost() {
+        return 10.5 + super.cost();
     }
 }
 
 class DarkRoast extends Beverage {
 
     @Override
-    long cost() {
-        return "Dark Roast".hashCode() + super.cost();
+    double cost() {
+        return 5.6 + super.cost();
     }
 }
 
 class Decaf extends Beverage {
 
     @Override
-    long cost() {
-        return "Decaf".hashCode() + super.cost();
+    double cost() {
+        return 11.23 + super.cost();
     }
 }
 
 class Espresso extends Beverage {
 
     @Override
-    long cost() {
-        return "Espresso".hashCode() + super.cost();
+    double cost() {
+        return 3.55 + super.cost();
     }
 }
 

@@ -20,12 +20,6 @@ public class DarkRoastTest {
         darkRoast.setMocha();
         darkRoast.setSoy();
         darkRoast.setWhip();
-
-        Beverage beverage = new Beverage();
-        beverage.setMilk();
-        beverage.setMocha();
-        beverage.setSoy();
-        beverage.setWhip();
-        assertEquals(darkRoast.cost(), "Dark Roast".hashCode() + beverage.cost());
+        assertEquals(9.6, darkRoast.cost(), 0);
     }
 }

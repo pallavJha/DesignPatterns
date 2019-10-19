@@ -21,11 +21,6 @@ public class HouseBlendTest {
         houseBlend.setSoy();
         houseBlend.setWhip();
 
-        Beverage beverage = new Beverage();
-        beverage.setMilk();
-        beverage.setMocha();
-        beverage.setSoy();
-        beverage.setWhip();
-        assertEquals(houseBlend.cost(), "House Blend".hashCode() + beverage.cost());
+        assertEquals(14.5, houseBlend.cost(), 0);
     }
 }

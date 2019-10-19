@@ -21,6 +21,6 @@ public class DecalWithSoyAndMochaTest {
 
     @Test
     public void testGetCost() {
-        assertEquals(coffee.getDescription().hashCode(), coffee.getCost());
+        assertEquals(9.44, coffee.getCost(), 0);
     }
 }

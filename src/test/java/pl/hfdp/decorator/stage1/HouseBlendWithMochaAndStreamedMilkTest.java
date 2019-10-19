@@ -7,20 +7,20 @@ import static org.junit.Assert.*;
 
 public class HouseBlendWithMochaAndStreamedMilkTest {
 
-    private HouseBlendWithMochaAndStreamedMilk houseBlendWithMochaAndStreamedMilk;
+    private HouseBlendWithMochaAndStreamedMilk coffee;
 
     @Before
     public void setup() {
-        houseBlendWithMochaAndStreamedMilk = new HouseBlendWithMochaAndStreamedMilk();
+        coffee = new HouseBlendWithMochaAndStreamedMilk();
     }
 
     @Test
     public void testGetDescription() {
-        assertEquals(houseBlendWithMochaAndStreamedMilk.getDescription(), "House Blend With Mocha And Streamed Milk");
+        assertEquals(coffee.getDescription(), "House Blend With Mocha And Streamed Milk");
     }
 
     @Test
     public void testGetCost() {
-        assertEquals(houseBlendWithMochaAndStreamedMilk.getDescription().hashCode(), houseBlendWithMochaAndStreamedMilk.getCost());
+        assertEquals(11.45, coffee.getCost(), 0);
     }
 }

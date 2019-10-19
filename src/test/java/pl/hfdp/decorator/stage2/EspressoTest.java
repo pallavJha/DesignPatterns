@@ -26,7 +26,7 @@ public class EspressoTest {
         beverage.setMocha();
         beverage.setSoy();
         beverage.setWhip();
-        assertEquals(espresso.cost(), "Espresso".hashCode() + beverage.cost());
+        assertEquals(7.55, espresso.cost(), 0);
     }
 
 }
