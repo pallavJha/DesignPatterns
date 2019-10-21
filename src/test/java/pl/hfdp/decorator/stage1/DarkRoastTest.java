@@ -21,6 +21,6 @@ public class DarkRoastTest {
 
     @Test
     public void testGetCost() {
-        assertEquals(5.6, darkRoast.getCost(), 0);
+        assertEquals(5.6, darkRoast.cost(), 0);
     }
 }

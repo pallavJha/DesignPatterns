@@ -2,8 +2,6 @@ package pl.hfdp.decorator.stage2;
 
 class Beverage {
 
-    private String description;
-
     private boolean milk;
 
     private boolean soy;
@@ -11,10 +9,6 @@ class Beverage {
     private boolean mocha;
 
     private boolean whip;
-
-    Beverage() {
-        this.description = "Default Beverage";
-    }
 
     void setMilk() {
         this.milk = true;

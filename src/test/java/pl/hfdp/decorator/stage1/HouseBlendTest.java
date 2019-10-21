@@ -21,6 +21,6 @@ public class HouseBlendTest {
 
     @Test
     public void testGetCost() {
-        assertEquals(10.5, houseBlend.getCost(), 0);
+        assertEquals(10.5, houseBlend.cost(), 0);
     }
 }

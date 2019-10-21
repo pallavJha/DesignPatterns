@@ -11,7 +11,7 @@
  * <b>This is the problem.</b>
  * <br>
  * It has provided us the api that is called whenever new contents are
- * generated. We've to just hook out subscription algorithm into it.
+ * generated. We've to just hook our subscription algorithm into it.
  * The solution is divided into multiple stages. In the first stage we'll start
  * with a very simple and straight forward approach and then we'll move on
  * to a better solution.

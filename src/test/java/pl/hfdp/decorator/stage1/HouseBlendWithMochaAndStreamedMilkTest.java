@@ -21,6 +21,6 @@ public class HouseBlendWithMochaAndStreamedMilkTest {
 
     @Test
     public void testGetCost() {
-        assertEquals(11.45, coffee.getCost(), 0);
+        assertEquals(11.45, coffee.cost(), 0);
     }
 }
