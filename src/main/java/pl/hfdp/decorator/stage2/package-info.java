@@ -22,7 +22,7 @@
  *        for changes like, cost of Milk or cost of Mocha.
  *     </li>
  *     <li>
- *         If there's a new condiment then ww'll need to alter the beverage class.
+ *         If there's a new condiment then we'll need to alter the beverage class.
  *     </li>
  *     <li>
  *         What if there's a double mocha?
