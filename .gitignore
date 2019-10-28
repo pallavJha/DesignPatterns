@@ -1,6 +1,8 @@
 # Compiled class file
 *.class
-target
+target/**
+
+!target/cobertura/**
 
 # Log file
 *.log
