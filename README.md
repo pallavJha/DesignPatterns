@@ -1,5 +1,4 @@
 [![Build Status](https://travis-ci.org/pallavJha/DesignPatterns.svg?branch=master)](https://travis-ci.org/pallavJha/DesignPatterns)
-
 [![codecov](https://codecov.io/gh/pallavJha/DesignPatterns/branch/master/graph/badge.svg)](https://codecov.io/gh/pallavJha/DesignPatterns)
 
 # DesignPatterns
