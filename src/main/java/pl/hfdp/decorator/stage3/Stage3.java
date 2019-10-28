@@ -1,5 +1,8 @@
 package pl.hfdp.decorator.stage3;
 
+/**
+ * Beverages have kept the cost as abstract
+ */
 abstract class Beverage {
     String description = "Beverage";
 

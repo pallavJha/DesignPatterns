@@ -7,14 +7,13 @@ import static org.junit.Assert.assertEquals;
 
 public class DoubleMochaTest {
 
-    private Mocha mocha;
     private Mocha doubleMocha;
     private Beverage houseBlend;
 
     @Before
     public void setup() {
         houseBlend = new HouseBlend();
-        mocha = new Mocha(houseBlend);
+        Mocha mocha = new Mocha(houseBlend);
         doubleMocha = new Mocha(mocha);
     }
 
