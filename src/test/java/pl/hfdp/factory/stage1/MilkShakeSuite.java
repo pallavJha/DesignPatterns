@@ -10,7 +10,8 @@ import pl.hfdp.strategy.stage1.RedHeadDuckTest;
 @Suite.SuiteClasses({
         BananaMilkShakeTest.class,
         ChocolateMilkShakeTest.class,
-        StrawBerryMilkShakeTest.class
+        StrawBerryMilkShakeTest.class,
+        MilkShakeShopTest.class
 })
 public class MilkShakeSuite {
 }

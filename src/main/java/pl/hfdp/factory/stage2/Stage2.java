@@ -1,4 +1,4 @@
-package pl.hfdp.factory.stage1;
+package pl.hfdp.factory.stage2;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -60,9 +60,9 @@ class BananaMilkShake extends MilkShake {
     }
 }
 
-class MilkShakeShop {
+class MilkShakeFactory {
 
-    MilkShake orderShake(String type) {
+    public MilkShake orderShake(String type) {
         MilkShake milkShake;
 
         if (StrawBerryMilkShake.name().equals(type)) {
@@ -83,10 +83,10 @@ class MilkShakeShop {
     }
 }
 
-public class Stage1 {
+public class Stage2 {
     public static void main(String[] args) {
-        MilkShakeShop milkShakeShop = new MilkShakeShop();
-        MilkShake strawBerryMilkShake = milkShakeShop.orderShake(StrawBerryMilkShake.name());
+        MilkShakeFactory milkShakeFactory = new MilkShakeFactory();
+        MilkShake strawBerryMilkShake = milkShakeFactory.orderShake(StrawBerryMilkShake.name());
         System.out.println(strawBerryMilkShake);
     }
 }
