@@ -1,65 +1,5 @@
 package pl.hfdp.factory.stage1;
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-
-
-abstract class MilkShake {
-    List<String> ingredients = Collections.singletonList("Milk");
-
-    void addMilk() {
-        System.out.println("Adding the milk...");
-    }
-
-    void addIngredients() {
-        System.out.println("Adding the ingredients... " + ingredients.toString());
-    }
-
-    public void blend() {
-        System.out.println("Blending... " + ingredients.toString());
-    }
-
-    public String toString() {
-        return "MilkShake{" +
-                "ingredients=" + ingredients +
-                '}';
-    }
-}
-
-class StrawBerryMilkShake extends MilkShake {
-
-    StrawBerryMilkShake() {
-        this.ingredients = Arrays.asList("Milk", "Straw Berry");
-    }
-
-    static String name() {
-        return "Strawberry Milk Shake";
-    }
-}
-
-class ChocolateMilkShake extends MilkShake {
-
-    ChocolateMilkShake() {
-        this.ingredients = Arrays.asList("Milk", "Chocolate");
-    }
-
-    static String name() {
-        return "Chocolate Milk Shake";
-    }
-}
-
-class BananaMilkShake extends MilkShake {
-
-    BananaMilkShake() {
-        this.ingredients = Arrays.asList("Milk", "Banana");
-    }
-
-    static String name() {
-        return "Banana Milk Shake";
-    }
-}
-
 class MilkShakeShop {
 
     MilkShake orderShake(String type) {
@@ -82,12 +22,3 @@ class MilkShakeShop {
         return milkShake;
     }
 }
-
-public class Stage1 {
-    public static void main(String[] args) {
-        MilkShakeShop milkShakeShop = new MilkShakeShop();
-        MilkShake strawBerryMilkShake = milkShakeShop.orderShake(StrawBerryMilkShake.name());
-        System.out.println(strawBerryMilkShake);
-    }
-}
-
