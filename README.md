@@ -2,7 +2,7 @@
 [![codecov](https://codecov.io/gh/pallavJha/DesignPatterns/branch/master/graph/badge.svg)](https://codecov.io/gh/pallavJha/DesignPatterns)
 
 # DesignPatterns
-DesignPatterns in Java 8. Practices after reading from Head First Java
+DesignPatterns in Java 8. Practices after reading from Head First Design Patterns
 
 ```java
 //
