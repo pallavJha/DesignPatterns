@@ -76,9 +76,3 @@ class Whip extends CondimentDecorator {
         return beverage.cost() + 1.5D;
     }
 }
-
-public class Stage3 {
-    public static void main(String[] args) {
-        System.out.println("Stage3 of Decorator Design Pattern");
-    }
-}

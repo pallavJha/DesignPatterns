@@ -158,26 +158,3 @@ class MovieDirector implements Observer {
         }
     }
 }
-
-
-/**
- * Runs the stage2 of this package
- */
-public class Stage2 {
-
-    public static void main(String[] args) {
-        RaceCarDriver raceCarDriver = new RaceCarDriver();
-        NewsPaperMan newsPaperMan = new NewsPaperMan();
-        MovieDirector movieDirector = new MovieDirector();
-
-        // creating the observable
-        ReadDigest readDigest = new ReadDigest();
-
-        // adding as an observer
-        readDigest.addObserver(raceCarDriver);
-        readDigest.addObserver(newsPaperMan);
-        readDigest.addObserver(movieDirector);
-
-        IntStream.range(0, 10).forEach(i -> readDigest.generateContent());
-    }
-}

@@ -64,9 +64,3 @@ class Espresso extends Beverage {
         return 3.55 + super.cost();
     }
 }
-
-public class Stage2 {
-    public static void main(String[] args) {
-        System.out.println("Stage2 of Decorator Design Pattern");
-    }
-}

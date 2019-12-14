@@ -111,9 +111,3 @@ class DecalWithSoyAndMocha extends Beverage {
         return 9.44;
     }
 }
-
-public class Stage1 {
-    public static void main(String[] args) {
-        System.out.println("Stage1 of Decorator Design Pattern");
-    }
-}
