@@ -42,6 +42,4 @@ class MilkShakeFactory {
     }
 }
 
-public class Stage2 {
-}
 
