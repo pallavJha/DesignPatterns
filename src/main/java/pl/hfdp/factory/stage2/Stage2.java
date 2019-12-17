@@ -5,14 +5,24 @@ import pl.hfdp.factory.stage1.ChocolateMilkShake;
 import pl.hfdp.factory.stage1.MilkShake;
 import pl.hfdp.factory.stage1.StrawBerryMilkShake;
 
+/**
+ * The same shop that we created in the previous stage.
+ */
 class MilkShakeShop {
 
+    /**
+     * This object will take care of the concrete object generation.
+     */
     private MilkShakeFactory milkShakeFactory;
 
     MilkShakeShop(MilkShakeFactory milkShakeFactory) {
         this.milkShakeFactory = milkShakeFactory;
     }
 
+    /**
+     * @param type the type of the shake
+     * @return return the delicious Milk Shake
+     */
     MilkShake orderShake(String type) {
         MilkShake milkShake;
 
@@ -26,7 +36,14 @@ class MilkShakeShop {
     }
 }
 
+/**
+ * Out factory for creating the milk shake objects
+ */
 class MilkShakeFactory {
+    /**
+     * @param type the type of the milk shake
+     * @return the concrete object for the milk shake
+     */
     MilkShake createMilkShake(String type) {
         MilkShake milkShake;
         if (StrawBerryMilkShake.name().equals(type)) {
@@ -41,5 +58,3 @@ class MilkShakeFactory {
         return milkShake;
     }
 }
-
-

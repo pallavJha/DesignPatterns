@@ -1,7 +1,16 @@
 package pl.hfdp.factory.stage1;
 
+/**
+ * The Milk Shake Shop takes orders for the Milk Shakes and returns the exciting Milk Shakes
+ * after adding milk and other ingredients and blending it
+ */
 class MilkShakeShop {
 
+    /**
+     * @param type the type of the milk shake
+     * @return the prepared Milk Shake
+     * @throws RuntimeException if the an unidentified type is passed in.
+     */
     MilkShake orderShake(String type) {
         MilkShake milkShake;
 
