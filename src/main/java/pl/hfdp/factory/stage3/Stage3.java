@@ -6,6 +6,9 @@ import pl.hfdp.factory.stage1.ChocolateMilkShake;
 import pl.hfdp.factory.stage1.MilkShake;
 import pl.hfdp.factory.stage1.StrawBerryMilkShake;
 
+/**
+ * This new milk cake shop is delegating the object creation process to its concrete classes3
+ */
 abstract class MilkShakeShop {
 
     abstract MilkShake createMilkShake(String type);
