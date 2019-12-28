@@ -1,9 +1,9 @@
-package pl.hfdp.factory.stage2;
+package pl.hfdp.factory.simple.stage2;
 
 import org.junit.Before;
 import org.junit.Test;
-import pl.hfdp.factory.stage1.MilkShake;
-import pl.hfdp.factory.stage1.StrawBerryMilkShake;
+import pl.hfdp.factory.simple.stage1.MilkShake;
+import pl.hfdp.factory.simple.stage1.StrawBerryMilkShake;
 
 import static org.junit.Assert.*;
 

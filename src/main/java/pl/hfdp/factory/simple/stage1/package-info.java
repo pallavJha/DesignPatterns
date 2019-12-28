@@ -14,10 +14,10 @@
  *     Stage 1
  * </h3>
  * <p>
- *     In this stage we'll be creating a simple Milk Shake shop. Our {@link pl.hfdp.factory.stage1.MilkShakeShop} has a
- *     method {@link pl.hfdp.factory.stage1.MilkShakeShop#orderShake(java.lang.String)} that accepts a String parameter
+ *     In this stage we'll be creating a simple Milk Shake shop. Our {@link pl.hfdp.factory.simple.stage1.MilkShakeShop} has a
+ *     method {@link pl.hfdp.factory.simple.stage1.MilkShakeShop#orderShake(java.lang.String)} that accepts a String parameter
  *     for the type of the MilkShake. Afterwards, it creates an object based on the argument and then adds the other
  *     ingredients and blends it before returning it back to the client.
  * </p>
  */
-package pl.hfdp.factory.stage1;
+package pl.hfdp.factory.simple.stage1;

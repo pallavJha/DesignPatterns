@@ -1,9 +1,9 @@
-package pl.hfdp.factory.stage2;
+package pl.hfdp.factory.simple.stage2;
 
-import pl.hfdp.factory.stage1.BananaMilkShake;
-import pl.hfdp.factory.stage1.ChocolateMilkShake;
-import pl.hfdp.factory.stage1.MilkShake;
-import pl.hfdp.factory.stage1.StrawBerryMilkShake;
+import pl.hfdp.factory.simple.stage1.BananaMilkShake;
+import pl.hfdp.factory.simple.stage1.ChocolateMilkShake;
+import pl.hfdp.factory.simple.stage1.MilkShake;
+import pl.hfdp.factory.simple.stage1.StrawBerryMilkShake;
 
 /**
  * The same shop that we created in the previous stage.

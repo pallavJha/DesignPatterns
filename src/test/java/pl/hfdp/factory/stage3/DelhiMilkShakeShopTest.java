@@ -3,9 +3,9 @@ package pl.hfdp.factory.stage3;
 import junit.framework.TestCase;
 import org.junit.Before;
 import org.junit.Test;
-import pl.hfdp.factory.stage1.BananaMilkShake;
-import pl.hfdp.factory.stage1.MilkShake;
-import pl.hfdp.factory.stage1.StrawBerryMilkShake;
+import pl.hfdp.factory.simple.stage1.BananaMilkShake;
+import pl.hfdp.factory.simple.stage1.MilkShake;
+import pl.hfdp.factory.simple.stage1.StrawBerryMilkShake;
 
 public class DelhiMilkShakeShopTest {
 

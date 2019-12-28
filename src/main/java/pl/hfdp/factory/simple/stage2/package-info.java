@@ -36,14 +36,14 @@
  *     </ol>
  * <p>
  *     What we can do, right now, is to delegate the task of concrete object creation to a new Class. As the sole
- *     purpose of this class is to create objects, we'll call it a <b>Factory</b>, {@link pl.hfdp.factory.stage2.MilkShakeFactory}.
+ *     purpose of this class is to create objects, we'll call it a <b>Factory</b>, {@link pl.hfdp.factory.simple.stage2.MilkShakeFactory}.
  * </p>
  * <p>
- *     This way we've made the {@link pl.hfdp.factory.stage2.MilkShakeShop#orderShake(java.lang.String)} closed for modification.
+ *     This way we've made the {@link pl.hfdp.factory.simple.stage2.MilkShakeShop#orderShake(java.lang.String)} closed for modification.
  * </p>
  * <p>
  *     And we've learnt Simple Factory Idiom(yes, this is not a Design Pattern).
  * </p>
  */
 
-package pl.hfdp.factory.stage2;
+package pl.hfdp.factory.simple.stage2;

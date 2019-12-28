@@ -1,4 +1,4 @@
-package pl.hfdp.factory.stage1;
+package pl.hfdp.factory.simple.stage1;
 
 import org.junit.After;
 import org.junit.Before;
@@ -9,15 +9,15 @@ import java.io.PrintStream;
 
 import static junit.framework.TestCase.assertEquals;
 
-public class BananaMilkShakeTest {
+public class StrawBerryMilkShakeTest {
 
-    private BananaMilkShake bananaMilkShake;
+    private StrawBerryMilkShake strawBerryMilkShake;
     private ByteArrayOutputStream stream;
     private PrintStream originalStream;
 
     @Before
     public void setUp() {
-        bananaMilkShake = new BananaMilkShake();
+        strawBerryMilkShake = new StrawBerryMilkShake();
         originalStream = System.out;
         stream = new ByteArrayOutputStream();
         System.setOut(new PrintStream(stream));
@@ -25,13 +25,13 @@ public class BananaMilkShakeTest {
 
     @After
     public void tearDown() {
-        bananaMilkShake = null;
+        strawBerryMilkShake = null;
         System.setOut(originalStream);
     }
 
     @Test
     public void testAddMilk() {
-        bananaMilkShake.addMilk();
+        strawBerryMilkShake.addMilk();
         String content = stream.toString();
         assertEquals("Adding the milk...", content.trim());
         stream.reset();
@@ -39,27 +39,27 @@ public class BananaMilkShakeTest {
 
     @Test
     public void testAddIngredients() {
-        bananaMilkShake.addIngredients();
+        strawBerryMilkShake.addIngredients();
         String content = stream.toString();
-        assertEquals("Adding the ingredients... [Milk, Banana]", content.trim());
+        assertEquals("Adding the ingredients... [Milk, Straw Berry]", content.trim());
         stream.reset();
     }
 
     @Test
     public void testBlend() {
-        bananaMilkShake.blend();
+        strawBerryMilkShake.blend();
         String content = stream.toString();
-        assertEquals("Blending... [Milk, Banana]", content.trim());
+        assertEquals("Blending... [Milk, Straw Berry]", content.trim());
         stream.reset();
     }
 
     @Test
     public void testToString() {
-        assertEquals("MilkShake{ingredients=[Milk, Banana]}", bananaMilkShake.toString());
+        assertEquals("MilkShake{ingredients=[Milk, Straw Berry]}", strawBerryMilkShake.toString());
     }
 
     @Test
     public void name() {
-        assertEquals("Banana Milk Shake", BananaMilkShake.name());
+        assertEquals("Strawberry Milk Shake", StrawBerryMilkShake.name());
     }
 }

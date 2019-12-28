@@ -1,4 +1,4 @@
-package pl.hfdp.factory.stage1;
+package pl.hfdp.factory.simple.stage1;
 
 /**
  * The Milk Shake Shop takes orders for the Milk Shakes and returns the exciting Milk Shakes

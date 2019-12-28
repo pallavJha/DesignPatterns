@@ -1,4 +1,4 @@
-package pl.hfdp.factory.stage1;
+package pl.hfdp.factory.simple.stage1;
 
 import java.util.Collections;
 import java.util.List;
