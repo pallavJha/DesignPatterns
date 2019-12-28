@@ -7,10 +7,16 @@ import pl.hfdp.factory.stage1.MilkShake;
 import pl.hfdp.factory.stage1.StrawBerryMilkShake;
 
 /**
- * This new milk cake shop is delegating the object creation process to its concrete classes3
+ * This new milk cake shop is delegating the object creation process to its concrete classes.
  */
 abstract class MilkShakeShop {
 
+    /**
+     * The classes {@link DelhiMilkShakeShop} and {@link MumbaiMilkShakeShop} will implement this method.
+     *
+     * @param type type of the milk shake
+     * @return a concrete Milk Shake
+     */
     abstract MilkShake createMilkShake(String type);
 
     MilkShake orderShake(String type) {
@@ -27,6 +33,13 @@ abstract class MilkShakeShop {
 }
 
 class DelhiMilkShakeShop extends MilkShakeShop {
+
+    /**
+     * Delhi Milkshake shop only serves Strawberry Milkshakes
+     *
+     * @param type type of the milk shake
+     * @return Milkshake
+     */
     MilkShake createMilkShake(String type) {
         MilkShake milkShake;
         if (StrawBerryMilkShake.name().equals(type)) {
@@ -39,6 +52,13 @@ class DelhiMilkShakeShop extends MilkShakeShop {
 }
 
 class MumbaiMilkShakeShop extends MilkShakeShop {
+
+    /**
+     * Mumbai Milkshake shop serves Banana MilkShake and Chocolate Milkshake
+     *
+     * @param type type of the milk shake
+     * @return Milkshake
+     */
     MilkShake createMilkShake(String type) {
         MilkShake milkShake;
         if (ChocolateMilkShake.name().equals(type)) {
