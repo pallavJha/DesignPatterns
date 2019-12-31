@@ -1,4 +1,4 @@
-package pl.hfdp.factory.stage3;
+package pl.hfdp.factory.method.stage3;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;

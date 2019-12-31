@@ -1,4 +1,4 @@
-package pl.hfdp.factory.stage3;
+package pl.hfdp.factory.method.stage3;
 
 
 import pl.hfdp.factory.simple.stage1.BananaMilkShake;
