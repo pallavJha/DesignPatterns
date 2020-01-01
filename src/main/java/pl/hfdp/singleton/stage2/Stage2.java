@@ -44,6 +44,8 @@ class ConfigManager {
     }
 
     /**
+     * This block is synchronized as we want the threads to access this method one at a time.
+     *
      * @return the singleton instance of the Config Manager
      */
     public static synchronized ConfigManager getInstance() {
