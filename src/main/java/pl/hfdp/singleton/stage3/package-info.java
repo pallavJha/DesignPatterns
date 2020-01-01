@@ -1,0 +1,1 @@
+package pl.hfdp.singleton.stage3;
