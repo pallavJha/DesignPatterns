@@ -4,6 +4,8 @@ import junit.framework.TestCase;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.NoSuchElementException;
+
 public class DashboardScreenTest {
 
     private DashboardScreen dashboardScreen;
@@ -39,11 +41,21 @@ public class DashboardScreenTest {
         TestCase.assertEquals(actualCommand, expectedCommand4);
     }
 
+    @Test(expected = NoSuchElementException.class)
+    public void getCommandWithNSEE() {
+        dashboardScreen.getCommand(27);
+    }
+
     @Test
     public void executeCommand() {
         Command actualCommand = new LightOnCommand(new Light());
         dashboardScreen.addCommand(actualCommand);
         dashboardScreen.executeCommand(0);
+    }
+
+    @Test(expected = NoSuchElementException.class)
+    public void executeCommandWithNSEE() {
+        dashboardScreen.executeCommand(27);
     }
 
     @Test
