@@ -11,7 +11,7 @@ import static junit.framework.TestCase.assertTrue;
 
 public class IteratorEnumerationTest {
 
-    IteratorEnumeration<Integer> iteratorEnumeration;
+    private IteratorEnumeration<Integer> iteratorEnumeration;
 
     @Before
     public void setUp() {
