@@ -18,7 +18,8 @@ import pl.hfdp.decorator.stage1.HouseBlendWithMochaAndStreamedMilkTest;
         MacroCommandTest.class,
         SpeakerTest.class,
         SpeakerVolDecreaseCommandTest.class,
-        SpeakerVolIncreaseCommandTest.class
+        SpeakerVolIncreaseCommandTest.class,
+        DashboardScreenTest.class
 })
 public class CommandTestSuite {
 }

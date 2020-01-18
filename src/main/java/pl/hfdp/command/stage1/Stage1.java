@@ -207,9 +207,16 @@ class MacroCommand implements Command {
     }
 }
 
+/**
+ * The dashboard screen for the facility Manager
+ */
 class DashboardScreen {
 
-    private List<Command> commands = new ArrayList<>();
+    // the list of the commands
+    private List<Command> commands = new ArrayList<>(20);
+
+    // this attribute stores the command that was last executed.
+    // it is used for undo
     private Command lastCommand;
 
     public Command getCommand(int i) {
@@ -221,10 +228,6 @@ class DashboardScreen {
 
     public void addCommand(Command command) {
         commands.add(command);
-    }
-
-    public void setCommand(int i, Command command) {
-        commands.add(i, command);
     }
 
     public void executeCommand(int i) {
