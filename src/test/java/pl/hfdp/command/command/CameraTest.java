@@ -1,4 +1,4 @@
-package pl.hfdp.command.stage1;
+package pl.hfdp.command.command;
 
 import org.junit.After;
 import org.junit.Before;
@@ -9,20 +9,19 @@ import java.io.OutputStream;
 import java.io.PrintStream;
 
 import static junit.framework.TestCase.assertTrue;
-import static org.junit.Assert.*;
 
-public class SpeakerTest {
+public class CameraTest {
 
     private OutputStream stream;
     private PrintStream originalStream = System.out;
-    private Speaker speaker;
+    private Camera camera;
 
     @Before
     public void setUp() {
         originalStream = System.out;
         stream = new ByteArrayOutputStream();
         System.setOut(new PrintStream(stream));
-        speaker = new Speaker();
+        camera = new Camera();
     }
 
     @After
@@ -31,14 +30,14 @@ public class SpeakerTest {
     }
 
     @Test
-    public void increaseVolume() {
-        speaker.increaseVolume();
-        assertTrue(stream.toString().contains("The volume has been increased."));
+    public void startRecording() {
+        camera.startRecording();
+        assertTrue(stream.toString().contains("Recording started."));
     }
 
     @Test
-    public void decreaseVolume() {
-        speaker.decreaseVolume();
-        assertTrue(stream.toString().contains("The volume has been decreased."));
+    public void stopRecording() {
+        camera.stopRecording();
+        assertTrue(stream.toString().contains("Recording stopped."));
     }
 }

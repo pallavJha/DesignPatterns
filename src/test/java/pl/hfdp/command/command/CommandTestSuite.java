@@ -1,11 +1,7 @@
-package pl.hfdp.command.stage1;
+package pl.hfdp.command.command;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-import pl.hfdp.decorator.stage1.DarkRoastTest;
-import pl.hfdp.decorator.stage1.DecalWithSoyAndMochaTest;
-import pl.hfdp.decorator.stage1.HouseBlendTest;
-import pl.hfdp.decorator.stage1.HouseBlendWithMochaAndStreamedMilkTest;
 
 @RunWith(Suite.class)
 @Suite.SuiteClasses({

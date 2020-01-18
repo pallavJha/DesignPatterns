@@ -1,4 +1,4 @@
-package pl.hfdp.command.stage1;
+package pl.hfdp.command.command;
 
 import org.junit.After;
 import org.junit.Before;
@@ -9,19 +9,18 @@ import java.io.OutputStream;
 import java.io.PrintStream;
 
 import static junit.framework.TestCase.assertTrue;
-import static org.junit.Assert.*;
 
-public class LightOnCommandTest {
+public class LightOffCommandTest {
 
     private OutputStream stream = System.out;
     private PrintStream originalStream = System.out;
-    private LightOnCommand command;
+    private LightOffCommand command;
 
     @Before
     public void setUp() {
         stream = new ByteArrayOutputStream();
         System.setOut(new PrintStream(stream));
-        command = new LightOnCommand(new Light());
+        command = new LightOffCommand(new Light());
     }
 
     @After
@@ -32,12 +31,12 @@ public class LightOnCommandTest {
     @Test
     public void execute() {
         command.execute();
-        assertTrue(stream.toString().contains("the Light is on now"));
+        assertTrue(stream.toString().contains("the Light is off now"));
     }
 
     @Test
     public void undo() {
         command.undo();
-        assertTrue(stream.toString().contains("the Light is off now"));
+        assertTrue(stream.toString().contains("the Light is on now"));
     }
 }
