@@ -1,4 +1,4 @@
-package pl.hfdp.command.command;
+package pl.hfdp.command;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;

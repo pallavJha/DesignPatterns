@@ -1,4 +1,4 @@
-package pl.hfdp.command.command;
+package pl.hfdp.command;
 
 import java.util.ArrayList;
 import java.util.List;

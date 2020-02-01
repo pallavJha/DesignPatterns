@@ -1,4 +1,4 @@
-package pl.hfdp.command.command;
+package pl.hfdp.command;
 
 import junit.framework.TestCase;
 import org.junit.Before;

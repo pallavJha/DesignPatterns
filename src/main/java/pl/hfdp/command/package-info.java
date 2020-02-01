@@ -163,4 +163,4 @@
  *
  * This is Command Design Pattern.
  */
-package pl.hfdp.command.command;
+package pl.hfdp.command;
