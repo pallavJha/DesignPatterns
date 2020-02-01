@@ -1,4 +1,4 @@
-package pl.hfdp.command.command;
+package pl.hfdp.command;
 
 import org.junit.After;
 import org.junit.Before;
@@ -10,17 +10,18 @@ import java.io.PrintStream;
 
 import static junit.framework.TestCase.assertTrue;
 
-public class LightOffCommandTest {
+public class SpeakerTest {
 
-    private OutputStream stream = System.out;
+    private OutputStream stream;
     private PrintStream originalStream = System.out;
-    private LightOffCommand command;
+    private Speaker speaker;
 
     @Before
     public void setUp() {
+        originalStream = System.out;
         stream = new ByteArrayOutputStream();
         System.setOut(new PrintStream(stream));
-        command = new LightOffCommand(new Light());
+        speaker = new Speaker();
     }
 
     @After
@@ -29,14 +30,14 @@ public class LightOffCommandTest {
     }
 
     @Test
-    public void execute() {
-        command.execute();
-        assertTrue(stream.toString().contains("the Light is off now"));
+    public void increaseVolume() {
+        speaker.increaseVolume();
+        assertTrue(stream.toString().contains("The volume has been increased."));
     }
 
     @Test
-    public void undo() {
-        command.undo();
-        assertTrue(stream.toString().contains("the Light is on now"));
+    public void decreaseVolume() {
+        speaker.decreaseVolume();
+        assertTrue(stream.toString().contains("The volume has been decreased."));
     }
 }

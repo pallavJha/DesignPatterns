@@ -1,4 +1,4 @@
-package pl.hfdp.command.command;
+package pl.hfdp.command;
 
 import org.junit.After;
 import org.junit.Before;
@@ -10,17 +10,17 @@ import java.io.PrintStream;
 
 import static junit.framework.TestCase.assertTrue;
 
-public class CameraStopRecordingCommandTest {
+public class LightOffCommandTest {
 
     private OutputStream stream = System.out;
     private PrintStream originalStream = System.out;
-    private CameraStopRecordingCommand command;
+    private LightOffCommand command;
 
     @Before
     public void setUp() {
         stream = new ByteArrayOutputStream();
         System.setOut(new PrintStream(stream));
-        command = new CameraStopRecordingCommand(new Camera());
+        command = new LightOffCommand(new Light());
     }
 
     @After
@@ -31,12 +31,12 @@ public class CameraStopRecordingCommandTest {
     @Test
     public void execute() {
         command.execute();
-        assertTrue(stream.toString().contains("Recording stopped."));
+        assertTrue(stream.toString().contains("the Light is off now"));
     }
 
     @Test
     public void undo() {
         command.undo();
-        assertTrue(stream.toString().contains("Recording started."));
+        assertTrue(stream.toString().contains("the Light is on now"));
     }
 }
