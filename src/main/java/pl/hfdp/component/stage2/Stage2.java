@@ -8,13 +8,9 @@ abstract class HTMLComponent {
 
     private String type;
 
-    public String getText() {
-        throw new UnsupportedOperationException("The Element cannot have text.");
-    }
+    abstract String getText();
 
-    public void setText(String text) {
-        throw new UnsupportedOperationException("The Element cannot have text.");
-    }
+    abstract void setText(String text);
 
     public String getType() {
         return type;
@@ -28,9 +24,7 @@ abstract class HTMLComponent {
         throw new UnsupportedOperationException("The Element cannot have children nodes.");
     }
 
-    public Iterator<HTMLComponent> iterator() {
-        throw new UnsupportedOperationException("The Element cannot have children nodes.");
-    }
+    abstract Iterator<HTMLComponent> iterator();
 }
 
 class HTMLCompositeElement extends HTMLComponent {
