@@ -29,7 +29,7 @@ public class HTMLPageTest {
     }
 
     @Test
-    public void setElements() {
+    public void iterator() {
         HTMLElement element1 = new HTMLElement();
         HTMLElement element2 = new HTMLElement();
         page.addElement(element1);
