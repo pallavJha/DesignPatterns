@@ -54,7 +54,7 @@ class Document {
 
     public Status addContent(String content) {
         if (currentStage == DRAFT) {
-            this.content = content;
+            this.setContent(content);
             this.currentStage = IN_REVIEW;
             return new Status();
         } else if (currentStage == IN_REVIEW) {
