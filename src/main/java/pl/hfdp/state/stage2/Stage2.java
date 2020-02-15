@@ -48,12 +48,17 @@ class Status {
 
 abstract class State {
 
+    // this method returns the type of the State
+    // like, DRAFT, IN REVIEW or APPROVED
     abstract String getType();
 
+    // This map will contain the mapping between actions to handler.
+    // For example, one of the entry in map for the state DRAFT could be
+    // (REVIEW, Save the content and move to IN REVIEW state)
     private Map<Integer, Function<Input, Status>> actionToHandler = new HashMap<>();
 
     public void on(int action, Function<Input, Status> handler) {
-        this.actionToHandler.put(action, handler);
+        actionToHandler.put(action, handler);
     }
 
     public Status handle(int action, Input input) {
@@ -99,9 +104,7 @@ class InReview extends State {
             document.setCurrentState(new Rejected(document));
             return new Status();
         });
-        this.on(Action.CLOSED, input -> {
-            return new Status(true, "The document cannot be closed if it is in IN REVIEW state.");
-        });
+        this.on(Action.CLOSED, input -> new Status(true, "The document cannot be closed if it is in IN REVIEW state."));
     }
 
     @Override
@@ -136,10 +139,13 @@ class Rejected extends State {
 
 class Document {
 
+    // it contains the document's text
     private String content;
 
+    // this attribute holds the current state of the document
     private State currentState;
 
+    // Whenever a new Document is created, the current State is set to Draft
     public Document() {
         this.currentState = new Draft(this);
     }
@@ -156,6 +162,7 @@ class Document {
         this.currentState = currentState;
     }
 
+    // Whenever any action is performed, it is then delegated to the current state.
     public Status handle(int action, Input input) {
         return this.currentState.handle(action, input);
     }
