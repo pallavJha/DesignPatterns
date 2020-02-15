@@ -144,10 +144,6 @@ class Document {
         this.currentState = new Draft(this);
     }
 
-    public String getContent() {
-        return content;
-    }
-
     public void setContent(String content) {
         this.content = content;
     }
