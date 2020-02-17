@@ -18,7 +18,7 @@ What can you do to solve this problem?
 - You can create an adapter that adapts to the exchange rate service. So, whenever there's a change in the exchange rate
   service the adapter makes sure that your software system receives the response in the expected format only.   
   
-  [Simple Adapter]("https://www.codiwan.com/img/adapter-pattern/Simple-Adapter.png")
+  ![Simple Adapter]("https://www.codiwan.com/img/adapter-pattern/Simple-Adapter.png")
   
   Also, whenever the exchange rate service change their response there won't be any impact on the your system as the 
   changes will be handled(or adapted) by the Adapter.
@@ -32,7 +32,7 @@ What can you do to solve this problem?
   as it implements the interface. It uses the object of the ExchangeRateAPIManager to get the latest rate and returns 
   the response as directed by the ExchangeRateAPI.
  
- [Class Diagram Adapter]("https://www.codiwan.com/img/adapter-pattern/Class-Diagram-Adapter.png")
+ ![Class Diagram Adapter]("https://www.codiwan.com/img/adapter-pattern/Class-Diagram-Adapter.png")
  
 Let's take a look at an another scenario where Adapter Design pattern can be help. 
 

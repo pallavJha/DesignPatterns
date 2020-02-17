@@ -1,25 +1,15 @@
 In this tutorial we'll be learning **Template Design Pattern**.
 
-> Note: Make sure to go through the code comments as well. It'll help you understand the concept better.
-
-
 We'll try to create a Report Generator that will generate Tax Report and Expense Report.
-
-It has been divided into two stages:
-
-- [Stage 1](#stage1)
-- [Stage 2](#stage2)
-
-#### Stage 1
 
 In this section we'll be creating two classes. One for Tax Report Generation and another for Expense Report
 Generation.
 ##### Tax Report
 
 The TaxReport class. It has a generate method that'll do the following tasks:
-- [ ] Create MySQL Database Connection
-- [ ] Execute a Query to Fetch some Tax related details from the Database
-- [ ] Convert the result to a PDF document.
+- Create MySQL Database Connection
+- Execute a Query to Fetch some Tax related details from the Database
+- Convert the result to a PDF document.
 ```java
 class TaxReport {
     public void generate() {
@@ -45,9 +35,9 @@ class TaxReport {
 ##### Expense Report
 
 The ExpenseReport class. It has a generate method that'll do the following tasks:
-- [ ] Create Postgres Database Connection
-- [ ] Execute a Query to Fetch some Tax related details from the Database
-- [ ] Convert the result to a XLS document.
+- Create Postgres Database Connection
+- Execute a Query to Fetch some Tax related details from the Database
+- Convert the result to a XLS document.
 ```java
 class ExpenseReport {
     public void generate() {
@@ -82,8 +72,6 @@ connection.
 **It seems like there is code duplication(or behaviour duplication?).**
 The first thing that comes into the mind is to remove it by creating an abstract class that will hold the common 
 attributes.
-
-#### Stage 2
 
 So, this is what we've created after the review, a new `ReportGenerator` class
 ```java
@@ -141,13 +129,12 @@ class ExpenseReport extends ReportGenerator {
 
 Here, we've generalized and abstracted the `createConnection` method as it remains same for both the classes.
 Also, we've **templatized** the way a report is generated, i.e., combining the task: 
-- [ ] Create a connection
-- [ ] Execute a Query
-- [ ] Convert the data received from the Query Response to a presentable format, i.e., XLS or PDF
+- Create a connection
+- Execute a Query
+- Convert the data received from the Query Response to a presentable format, i.e., XLS or PDF
 
 into the method `generate()`.
 
 We've delegated the task of executing the Query and converting the response to desired format.
 This way the algorithm of **creating a report**  remains same, the `generate` method, but the subclasses can redefine the
 steps but it cannot updated the structure of the algorithm.
-
