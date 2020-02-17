@@ -8,7 +8,7 @@ While learning the Command design pattern we'll try to implement a Facility Dash
 2. In order to take the actions on these devices they require buttons. Those buttons will interface the devices.
 3. They don't want to reconfigure the dashboard when new devices are added or removed.
 
- ![Wire Frame]("https://www.codiwan.com/img/command-pattern/CommandWireframe.png")
+ ![Wire Frame](https://www.codiwan.com/img/command-pattern/CommandWireframe.png)
 
 The wireframe tells that there would be blocks for each of the devices and inside those blocks there would be buttons to
 control the device.
@@ -104,7 +104,7 @@ The following class implements the `Command` interface and then delegates the `e
     }
 ```
 
-![UML Diagram]("https://www.codiwan.com/img/command-pattern/Class-Diagram.png")
+![UML Diagram](https://www.codiwan.com/img/command-pattern/Class-Diagram.png)
 
 And let the dashboard have these commands.
 

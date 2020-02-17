@@ -12,7 +12,7 @@ states of the document depends upon the action that are taken on the document. F
 state when it's current state is `IN REVIEW`. I've created this diagram based on the sequence of the actions taken on
 the document.
 
- ![State Diagram]("https://www.codiwan.com/img/state-pattern/state-diagram-1.png")
+ ![State Diagram](https://www.codiwan.com/img/state-pattern/state-diagram-1.png)
 
 This diagram tells us that we have to create handlers in the document that'll take care of the actions taken on the 
 document. For example, when a document is created then it should move to `DRAFT` state. Here `creation` of the document
@@ -106,7 +106,7 @@ we've to take care of.
 The clients have asked for a new state, `Closed`, and a new action that can be performed on `Rejected` state which
 moves the document to the `DRAFT` state.
 
-![State Diagram]("https://www.codiwan.com/img/state-pattern/state-diagram-2.png")
+![State Diagram](https://www.codiwan.com/img/state-pattern/state-diagram-2.png)
 
 If we would try to accommodate the new changes into our old code then that would not look good. It will be a maintenance
 nightmare. Adding one new state will require us to change all the methods so that we can properly handle it. And it's the
